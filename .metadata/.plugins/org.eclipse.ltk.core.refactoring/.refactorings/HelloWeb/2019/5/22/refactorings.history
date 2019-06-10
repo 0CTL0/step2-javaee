@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HelloWeb/WebContent/成员变量和局部变量.jsp&apos; to &apos;test3成员变量和局部变量.jsp&apos;" description="Rename resource &apos;成员变量和局部变量.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/成员变量和局部变量.jsp" name="test3成员变量和局部变量.jsp" stamp="1559277599506" updateReferences="true"/>
+</session>

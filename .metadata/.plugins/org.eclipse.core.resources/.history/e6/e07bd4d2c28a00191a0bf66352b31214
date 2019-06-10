@@ -1,0 +1,42 @@
+package com.imooc.servlet;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.imooc.domain.User;
+
+/**
+ * 用户登录的Servlet
+ */
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//接收数据：
+		String username=request.getParameter("username");
+		String password=request.getParameter("password");
+		//从ServletContext域中获得保存用户信息集合：
+		List<User> list=(List<User>)this.getServletContext().getAttribute("list");
+		for(User user:list) {
+			//判断用户名是否正确
+			if(username.equals(user.getUsername())) {
+				//用户名正确
+				if(password.equals(user.getPassword())) {
+					
+				}
+			}
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

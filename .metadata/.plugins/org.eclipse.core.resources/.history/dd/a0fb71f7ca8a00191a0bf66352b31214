@@ -1,0 +1,39 @@
+<%@page import="com.imooc.domain.User"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录成功</title>
+<link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+	<!-- 不同：html标签选择执行是嵌套在JSP标签之间当中，php则是直接在代码中输出，百分号>html代码<百分号可以理解为<<<EOF-->
+	<%
+		if(session.getAttribute("user")!=null){					
+	%>
+	<div class="login">
+		<div class="header">
+			<h1>登录成功</h1>
+		</div>
+		<div class="content">
+			<table align="center">
+				<tr>
+					<td align="center"><img src="/reg_login/img/pic01.jpg" /></td>
+				</tr>
+				<tr>
+					<td align="center">欢迎xxx,登录成功！</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>	
+	<%
+		}else{
+			
+		}
+	%>
+	
+</body>
+</html>

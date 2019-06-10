@@ -1,0 +1,17 @@
+package com.imooc.utils;
+
+import java.util.UUID;
+
+//文件上传的工具类
+public class UploadUtils {
+	/*
+	 * 解决上传文件同名问题
+	 * 生成唯一的文件名：
+	 */
+	public static String getUUIDFileName(String fileNam) {
+		return null;
+	}
+	public static void main(String[] args) {
+		System.out.println(UUID.randomUUID());
+	}
+}
